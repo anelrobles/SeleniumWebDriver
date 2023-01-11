@@ -55,10 +55,10 @@ public void testGooglePage() {
 	//assertEquals("hola - Buscar con Google", driver.getTitle());
 	
 	//FluentWait
-	/*Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+	Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
 			.withTimeout(Duration.ofSeconds(10))
 			.pollingEvery(Duration.ofSeconds(2))
-			.ignoring(NoSuchElementException.class);*/
+			.ignoring(NoSuchElementException.class);
 	
 	@SuppressWarnings("unused")
 	WebElement video = wait.until(new Function<WebDriver,WebElement>(){
